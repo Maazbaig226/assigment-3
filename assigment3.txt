@@ -1,0 +1,350 @@
+//  import 'dart:io';
+
+
+// import 'dart:math';
+
+// import 'dart:ffi';
+// import 'dart:html';
+// import 'dart:svg';
+
+
+
+
+
+void main(){
+ 
+
+
+// Q1
+List <String> allName =
+  ["Maaz","Moiz"," kashan","Ashir","Ahmed"
+
+];
+print(allName);
+
+// Q2
+List daysName = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+print(daysName);
+// // Q3
+print(daysName.isEmpty);
+daysName.remove("Sunday"); 
+print(daysName);
+daysName.remove("Saturday"); 
+print(daysName);
+daysName.remove("Friday"); 
+print(daysName);
+daysName.remove("Thursday"); 
+print(daysName);
+daysName.remove("Wednesday");   
+print(daysName);
+daysName.remove("Tuesday");
+print(daysName);
+daysName.remove("Monday");   
+print(daysName);
+// Q4 real
+// create  a list of Number
+List <int> numbers = [12,14,80,5,7,25];
+int smallest = numbers.reduce((a,b) => a < b ? a :b);
+int greatest = numbers.reduce((a,b) => a > b ? a: b);
+print("Number is smallest $smallest");
+print("Number is Greatest $greatest");
+}
+// Q5
+// Map<String, String> sellphone ={
+//   "name":"Maaz",
+// "mobileNumber": "00000", 
+// "Ashi": "1234",
+// "Salman": "5678",
+// "Omer":"7689",
+// "Ahmend": "5764",
+// "Rehan": "4352",
+// };
+// List<String> KeysWithLength4 = sellphone.keys.where((keys) => keys.length == 4).toList();
+// KeysWithLength4.forEach((keys) => print(keys));
+// print(KeysWithLength4);
+// print(sellphone);
+// Q6
+// Map<String, Map<String, String>> world = {
+//     "USA": {
+//       "capitalCity": "Washington, D.C.",
+//       "currency": "US Dollar",
+//       "language": "English",
+//     },
+//     "France": {
+//       "capitalCity": "Paris",
+//       "currency": "Euro",
+//       "language": "French",
+//     },
+//     "Japan": {
+//       "capitalCity": "Tokyo",
+//       "currency": "Japanese Yen",
+//       "language": "Japanese",
+//     },
+//   };
+
+//   String countryKey = "USA"; // Replace with any country key you want to retrieve information for
+
+//   if (world.containsKey(countryKey)); {
+//    Map<String, String> countryInfo = ["countryKey"];
+//      Map<String, String>  capitalCity =  world("capitalCity");
+//     String currency = countryInfo["currency"];
+
+//     print("Country: $countryKey");
+//     print("Capital City: $capitalCity");
+//     print("Currency: $currency");
+//   } else {
+//     print("Country key '$countryKey' not found in the world map.");
+//   }
+
+// Q7
+// Map<String, double> expenses = {
+//     'sun': 2000.0,
+//     'mon': 4000.0,
+//     'tue': 3334.0,
+//   };
+
+//   String mainKey = "fri";
+//   double newValue = 5000.0;
+
+//   if (expenses.containsKey(mainKey)) {
+//     expenses[mainKey] = newValue;
+//   } else {
+//     expenses[mainKey] = newValue;
+//   }
+
+//   print(expenses);
+// }
+  // Q8
+//   List<Map<String, dynamic>> mainEligibility = [
+//     {'name': 'John', 'eligible': true},
+//     {'name': 'Alice', 'eligible': false},
+//     {'name': 'Tom', 'eligible': false},
+//     {'name': 'Mike', 'eligible': true},
+//     {'name': 'Sarah', 'eligible': true},
+//   ];
+
+//   mainEligibility.removeWhere((user) => user['eligible'] == false);
+
+//   print(mainEligibility);
+// }
+
+
+// Q9
+
+// int findMax(List<int> num) {
+//   if (num.isEmpty) {
+//     throw ('List khali hai ye');
+//   }
+
+//   int max = num[0];
+
+//   for (int i = 1; i < num.length; i++) {
+//     if (num[i] > max) {
+//       max = num[i];
+//     }
+//   }
+
+//   return max;
+// }
+
+//   List<int> numbers = [90, 250, 999,7];
+//   int maxValue = findMax(numbers);
+//   print("Maximum value $maxValue");
+// Q10
+// List<String> removeDuplicates(List<String> strings) {
+//   List<String> uniqueStrings = [];
+
+//   for (var string in strings) {
+//     if (!uniqueStrings.contains(string)) {
+//       uniqueStrings.add(string);
+//     }
+//   }
+
+//   return uniqueStrings;
+// }
+
+//   List<String> strings = ['apple', 'banana', 'apple', 'orange', 'banana''Graps',];
+//   List<String> uniqueStrings = removeDuplicates(strings);
+//   print('Original List: $strings');
+//   print('List without Duplicates: $uniqueStrings');
+// }
+
+// 11 Question
+// List<T> getFirstNElements<T>(List<T> list, int n) {
+//   List<T> results = [];
+//   for (int i = 0; i < n && i < list.length; i++) {
+//     results.add(list[i]);
+//   }
+//   return results;
+// }
+//   List<int> numbers = [1, 2, 3, 4, 5, 6, 7,8,9,10,11,12,13,14,15,];
+  
+//   int n = 7;
+
+//   List<int> firstNElements = getFirstNElements(numbers, n);
+//   print('Original List: $numbers');
+//   print('First $n Elements: $firstNElements');
+// }
+
+
+// 12 Question
+// List<String> reverseList(List<String> list) {
+//   List<String> reversed = [];
+//   for (int i = list.length - 1; i >= 0; i--){
+    
+//     reversed.add(list[i]);
+//   }
+
+  
+//   return reversed;
+// }
+
+//   List<String> originalList = ['apple', 'banana', 'Graps', 'Language', 'Currency','capitalCity'];
+  
+//   List<String> reversedList = reverseList(originalList);
+  
+//   print('Reversed List: $reversedList');
+  
+//   print('Original List: $originalList');
+// }
+
+// 13 Question
+// List<int> getUniqueElements(List<int> list) {
+//   List<int> uniqueElements = [];
+//   for (int i = 0; i < list.length; i++) {
+//     if (!uniqueElements.contains(list[i])) {
+//       uniqueElements.add(list[i]);
+//     }
+//   }
+
+//   return uniqueElements;
+// }
+//    List<int> originalList = [1, 2, 3, 2, 4, 1, 5, 4];
+//   List<int> uniqueElementsList = getUniqueElements(originalList);
+//   print('Unique Elements List: $uniqueElementsList');
+//     print('Original List: $originalList');
+// }
+
+// 14 Question
+
+// List<int> sortList(List<int> list) {
+//   List<int> sortedList = List.from(list);
+//   sortedList.sort();
+//   return sortedList;
+// }
+//   List<int> originalList = [34,38, 37,45,1,6];
+//   List<int> sortedList = sortList(originalList);
+//   print('Sorted List: $sortedList');
+
+//   print('Original List: $originalList');
+// }
+// 15 Question
+// List<int> filterPositiveNumbers(List<int> list) {
+// List<int> positiveNumbersList = list.where((number) => number > 0).toList();
+//   return positiveNumbersList;
+// }
+//   List<int> originalList = [5, -2, 10, -8, 3, -1, 7];
+//   List<int> positiveNumbersList = filterPositiveNumbers(originalList);
+//   print('Positive Numbers List: $positiveNumbersList');
+//   print('Original List: $originalList');
+// }
+// 16 Question
+// List<int> filterEvenNumbers(List<int> list) {
+//   List<int> evenNumbersList = list.where((number) => number % 2 == 0).toList();
+//   return evenNumbersList;
+// }
+//   List<int> originalList = [5, 2, 10, 7, 3, 8, 6];
+//   List<int> evenNumbersList = filterEvenNumbers(originalList);
+//   print("Even Numbers List$evenNumbersList");
+//   print("Original List$originalList");
+// }
+
+// 17 Question
+
+// List<int> squareList(List<int> list) {
+//   List<int> squaredList = list.map((number) => number * number).toList();
+
+//   return squaredList;
+// }
+//   List<int> originalList = [12,15,14,11,78];
+//   List<int> squaredList = squareList(originalList);
+//   print("Squared List $squaredList");
+//   print("Original List $originalList");
+// }
+
+// 18 Question
+
+
+//   Map<String, dynamic> person = {
+//     'name': 'John',
+//     'age': 33,
+//     'isStudent': true,
+//   };
+//  if (person['isStudent'] && person['age'] > 18) {
+   
+//     print('Eligible');
+//   } else {
+//     print('Not eligible');
+//   }
+// }
+
+//  19 Question
+//   Map<String, dynamic> product = {
+//     'name': 'Example Product',
+//     'price': 56.88,
+//     'quantity': 90,
+//   };
+//   if (product['quantity'] > 0) {
+//     print('In stock');
+//   } else {
+//     print('Out of stock');
+//   }
+// }
+// 20 Question 
+
+  // Map<String, dynamic> car = {
+  //   'brand': 'Honda',
+  //   'color': 'White',
+  //   'isSedan': true,
+  // };
+  // if (car['isSedan'] == true && car['color'] == 'White') {
+  //   print('Match');
+  // } else {
+  //   print('No match');
+  // }
+  // 21 Question
+ 
+//   Map<String, dynamic> user = {
+//     'name': 'Alice',
+//     'isAdmin': true,
+//     'isActive': true,
+//   };
+//   if (user['isAdmin'] == true && user['isActive'] == true) {
+//     print('Active admin');
+//   } else {
+//     print('Not an active admin');
+//   }
+// }
+// Question 22
+
+  // Map<String, int> cart = {
+  //   'Graps': 5,
+  //   'Peach': 3,
+  //   'Mango': 2,
+  // };
+
+  // if (cart.containsKey('Graps')) {
+  //   print('Product found');
+  // } else {
+
+  //   print('Product not found');
+  // }
+
+
+
+
+
+
+
+
+}
